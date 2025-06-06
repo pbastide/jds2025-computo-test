@@ -236,12 +236,11 @@ The cost function parameter settings we employed in our experiments are listed i
 #|   - "Visualization by LLE."
 #| layout-ncol: 2
 
-# TODO: add the MNIST (using compute/mnist6000.csv data) four-panel figure from the mnist6000.csv file
-# figlist <- ...
-# figlist[[1]]
-# figlist[[2]]
-# figlist[[3]]
-# figlist[[4]]
+source(file = "scripts/plotutils.R")
+plot_dataset("compute/mnist6000", methods = c("tsne"))[[1]]
+plot_dataset("compute/mnist6000", methods = c("sammon"))[[1]]
+plot_dataset("compute/mnist6000", methods = c("isomap"))[[1]]
+plot_dataset("compute/mnist6000", methods = c("lle"))[[1]]
 ```
 
 
