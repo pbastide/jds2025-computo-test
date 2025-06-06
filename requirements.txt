@@ -1,0 +1,5 @@
+jupyter
+plotly
+numpy
+scikit-learn
+jupyter-cache
